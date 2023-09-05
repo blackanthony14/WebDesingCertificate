@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Formulario de Encuesta</title>
+</head>
+<body>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Por favor, completa la siguiente encuesta.</p>
+    <form id="survey-form" action="#" method="POST">
+        <label for="name" id="name-label">Nombre:</label>
+        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+        
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+        
+        <label for="number" id="number-label">Número:</label>
+        <input type="number" id="number" name="number" min="1" max="100" required placeholder="Ingresa un número">
+        
+        <label for="dropdown">Selecciona una opción:</label>
+        <select id="dropdown">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        
+        <label>Elige una opción:</label>
+        <input type="radio" name="opcion" value="opcion1"> Opción 1
+        <input type="radio" name="opcion" value="opcion2"> Opción 2
+        
+        <label>Selecciona múltiples opciones:</label>
+        <input type="checkbox" name="opcion1" value="opcion1"> Opción 1
+        <input type="checkbox" name="opcion2" value="opcion2"> Opción 2
+        <input type="checkbox" name="opcion3" value="opcion3"> Opción 3
+        
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
+        
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+</html>

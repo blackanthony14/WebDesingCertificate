@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sección de bienvenida */
+#welcome-section {
+    height: 100vh; /* La altura de la sección es igual a la altura de la ventana (viewport) */
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f0f0;
+}
+
+/* Sección de proyectos */
+#projects {
+    padding: 10px;
+}
+
+.project-tile {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Enlace a GitHub */
+#profile-link {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+/* Consulta de medios para hacer la barra de navegación responsiva */
+@media (max-width: 568px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        margin-bottom: 10px;
+    }
+}

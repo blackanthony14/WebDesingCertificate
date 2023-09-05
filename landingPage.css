@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Usamos Flexbox para el encabezado */
+    justify-content: space-between; /* Alinea el contenido horizontalmente */
+    align-items: center; /* Alinea el contenido verticalmente */
+}
+
+#header-img {
+    width: 100px; /* Ajusta el tamaño de tu logotipo */
+}
+
+#nav-bar {
+    margin-top: 20px;
+    display: flex; /* Usamos Flexbox para el menú de navegación */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Estilos del video */
+#video {
+    width: 500px;
+    max-width: 500px; /* Ajusta el tamaño del video según tus necesidades */
+    display: block;
+    margin: 20px auto;
+    margin-top: 15%;
+}
+
+/* Estilos del formulario */
+#form {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px; /* Ajusta el ancho del formulario según tus necesidades */
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #555;
+}
+
+/* Estilos para consultas de medios y Flexbox */
+/* Agrega tus estilos aquí según tus necesidades */
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+}
